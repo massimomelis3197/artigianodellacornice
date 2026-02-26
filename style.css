@@ -42,10 +42,8 @@ h3, h4 {
     --color-footer: #7d2925;
 }
 
-/* Navbar */
-/* Navbar */
 .navbar {
-     background: transparent;
+    background: transparent;
     box-shadow: none;
     position: fixed;
     top: 0;
@@ -597,6 +595,13 @@ h3, h4 {
 }
 
 @media (max-width: 480px) {
+   
+.logo img {
+    height: 40px; /* Altezza base */
+    width: auto;
+    margin-left: 0px;
+}
+    
 .hero {
        min-height: 100svh;
 }
