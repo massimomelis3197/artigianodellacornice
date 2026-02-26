@@ -601,7 +601,8 @@ h3, h4 {
        min-height: 100svh;
 }
     .hero-content {
-        margin-top:150px;
+        padding-top:60px;
+        padding-bottom:60px;
     }
     .hero h1 {
         font-size: 2.3rem;
