@@ -598,8 +598,8 @@ h3, h4 {
 
 @media (max-width: 480px) {
 .hero {
-    min-height: 100svh;
-      align-items: center;
+       min-height: auto;
+    padding: 8rem 2rem;
 }
     .hero-content {
         margin-top:0px;
