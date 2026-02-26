@@ -1,0 +1,50 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Raccogli i dati dal form
+    $nome = htmlspecialchars($_POST['nome']);
+    $email = htmlspecialchars($_POST['email']);
+    $messaggio = htmlspecialchars($_POST['messaggio']);
+    
+    // Validazione base
+    if (empty($nome) || empty($email) || empty($messaggio)) {
+        header("Location: contatti.html?error=campi_vuoti");
+        exit;
+    }
+    
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        header("Location: contatti.html?error=email_invalida");
+        exit;
+    }
+    
+    // Prepara il contenuto da salvare
+    $data_ora = date('d/m/Y H:i:s');
+    $contenuto = "=================================\n";
+    $contenuto .= "NUOVO MESSAGGIO\n";
+    $contenuto .= "Data e Ora: " . $data_ora . "\n";
+    $contenuto .= "=================================\n";
+    $contenuto .= "Nome: " . $nome . "\n";
+    $contenuto .= "Email: " . $email . "\n";
+    $contenuto .= "Messaggio:\n" . $messaggio . "\n";
+    $contenuto .= "=================================\n\n";
+    
+    // Salva nel file messaggi.txt
+    $file = fopen("messaggi.txt", "a");
+    
+    if ($file) {
+        fwrite($file, $contenuto);
+        fclose($file);
+        
+        // Redirect alla pagina di ringraziamento
+        header("Location: grazie.html");
+    } else {
+        // Se non riesce a creare/aprire il file
+        header("Location: contatti.html?error=errore_salvataggio");
+    }
+    
+    exit;
+} else {
+    // Se qualcuno prova ad accedere direttamente al file PHP
+    header("Location: contatti.html");
+    exit;
+}
+?>
