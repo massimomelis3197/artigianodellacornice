@@ -597,7 +597,10 @@ h3, h4 {
 }
 
 @media (max-width: 480px) {
-.hero {min-height: 100svh;}
+.hero {
+    min-height: 100svh;
+      align-items: center;
+}
     .hero-content {
         margin-top:0px;
     }
