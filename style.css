@@ -956,10 +956,6 @@ h3, h4 {
         margin: 0 auto;
     }
 
-    .cards-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .footer-container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1020,10 +1016,15 @@ h3, h4 {
     }
 
     .metodo-header h2 {
-font-size: 2.2rem;
+        font-size: 2.2rem;
     }
+
     .metodo-header h4 {
         font-size: 1.2rem;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .portfolio-header h2{
@@ -1034,9 +1035,16 @@ font-size: 2.2rem;
         font-size: 1.2rem;
     }
 
+    .portfolio-grid {
+        grid-template-columns: repeat(1, 1fr);
+gap: 2rem;
+    }
+
     .contatti-header h2{
         font-size: 2.2rem;
     }
+
+    
 
     .galleria-header h2{
         font-size: 2.2rem;
