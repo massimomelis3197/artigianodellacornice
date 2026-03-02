@@ -1,4 +1,3 @@
-
 /* Reset e Base */
 * {
     margin: 0;
@@ -41,6 +40,8 @@ h3, h4 {
     --color-sfondo-chiaro:#FEFDF8;
     --color-footer: #7d2925;
 }
+
+/* ==================== navbar ==================== */
 
 .navbar {
     background: transparent;
@@ -107,6 +108,8 @@ h3, h4 {
     color: var(--color-oro);
 }
 
+/* ==================== PAGINA HOME ==================== */
+
 .hero {
     position: relative;
     min-height: 100vh;
@@ -149,10 +152,11 @@ h3, h4 {
     z-index: 1;
     max-width: 800px;
     padding: 2rem;
-    margin-top: 100px;
+    margin-top: 150px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.0rem;
 
 }
 
@@ -177,15 +181,17 @@ h3, h4 {
 
 .hero h1 {
     color: var(--color-bianco);
-    font-size: 4.0rem;
+    font-size: 3.6rem;
     font-weight: bold;
     line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .hero p {
     color: var(--color-bianco);
     font-size: 1.2rem;
     line-height: 1.8;
+    margin-bottom: 30px;
 }
 
 .cta-button {
@@ -258,8 +264,6 @@ h3, h4 {
     line-height: 1.8;
 }
 
-
-/* Metodo Section */
 .metodo {
     background-color: var(--color-sfondo-caldo);
     padding: 4rem 2rem;
@@ -351,11 +355,11 @@ h3, h4 {
 
 .portfolio {
     background-color: var(--color-sfondo-chiaro);
-    padding: 4rem 2rem;
+    padding: 4rem;
 }
 
 .portfolio-header {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto 4rem;
     text-align: center;
     display: flex;
@@ -398,24 +402,24 @@ h3, h4 {
 
 .portfolio-footer a{
     text-decoration: none;
-     color: var(--color-oro);
+    color: var(--color-oro);
     font-size: 1.2rem;
     line-height: 1.8;
-     font-weight: 600;
+    font-weight: 600;
 }
 
 .portfolio-grid {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
 .portfolio-item {
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 5px;
     aspect-ratio: 4/3;
     cursor: pointer;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -464,8 +468,8 @@ h3, h4 {
     transform: translateY(0);
 }
 
+/* ==================== footer ==================== */
 
-/* Footer */
 .footer {
     background-color: var(--color-footer);
     color: var(--color-bianco);
@@ -543,95 +547,9 @@ h3, h4 {
     opacity: 0.8;
 }
 
-/* Responsive Design */
-/* Responsive Design */
-@media (max-width: 992px) {
-    .footer-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-menu {
-        gap: 1rem;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-     .hero h3 {
-        font-size: 1.5rem;
-    }
-
-    .chi-sono-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .profile-image img {
-        margin: 0 auto;
-    }
-
-    .cards-container {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 2rem;
-    }
-
-    .footer-logo {
-        margin: 0 auto 1rem;
-        display: block;
-    }
-    
-    .social-links a {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-   
-.logo img {
-    height: 40px; /* Altezza base */
-    width: auto;
-    margin-left: 0px;
-}
-    
-.hero {
-       min-height: 100svh;
-}
-    .hero-content {
-        padding-top:60px;
-        padding-bottom:60px;
-    }
-    .hero h1 {
-        font-size: 2.3rem;
-    }
-
- .hero h3 {
-        font-size: 1rem;
-    }
-    
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .cta-button {
-        padding: 0.8rem 2rem;
-        font-size: 1.2rem;
-    }
-}
-
-
 /* ==================== PAGINA CONTATTI ==================== */
 
 
-/* Contatti Section */
 .contatti-section {
     background-color: var(--color-sfondo-caldo);
     padding: 4rem 2rem;
@@ -825,8 +743,6 @@ h3, h4 {
 
 /* ==================== PAGINA GALLERIA ==================== */
 
-
-/* Galleria Section */
 .galleria-section {
     background-color: var(--color-sfondo-caldo);
     padding: 4rem 2rem;
@@ -880,8 +796,7 @@ h3, h4 {
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 20px;
-    text-transform: uppercase;
-      font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
 }
 
@@ -986,3 +901,149 @@ h3, h4 {
         font-size: 0.9rem;
     }
 }
+
+
+
+
+
+
+
+/* Responsive Design */
+/* Responsive Design */
+@media (max-width: 992px) {
+
+   .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-grid{
+        max-width: 600px;
+        gap: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer{
+        padding: 4rem 3rem 1rem;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+     .hero h3 {
+        font-size: 1.5rem;
+    }
+
+    
+    .chi-sono-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-image img {
+        margin: 0 auto;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-logo {
+        margin: 0 auto 1rem;
+        display: block;
+    }
+    
+    .social-links a {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+   
+.logo img {
+    height: 40px; /* Altezza base */
+    width: auto;
+    margin-left: 0px;
+}
+    
+.hero {
+       min-height: 100svh;
+}
+    .hero-content {
+        padding-top:60px;
+        padding-bottom:60px;
+        gap:1.5rem
+    }
+    .hero h1 {
+        font-size: 2.6rem;
+        margin-bottom: 0px;
+    }
+
+ .hero h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0px;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 2rem;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+     .chi-sono-content h2 {
+        font-size: 2.2rem; 
+    }
+    .chi-sono-content h4 {
+        font-size: 1.2rem;
+    }
+
+    .metodo-header h2 {
+font-size: 2.2rem;
+    }
+    .metodo-header h4 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-header h2{
+        font-size: 2.2rem;
+    }
+
+    .portfolio-header h4 {
+        font-size: 1.2rem;
+    }
+
+    .contatti-header h2{
+        font-size: 2.2rem;
+    }
+
+    .galleria-header h2{
+        font-size: 2.2rem;
+    }
+
+    .form-container h3{
+        font-size: 1.6rem;
+    }
+}
+
