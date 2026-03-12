@@ -487,11 +487,10 @@ h3, h4 {
 }
 
 .footer-logo {
-    height: 70px;
+    height: 100px;
     width: auto;
     margin-bottom: 20px;
 }
-
 
 .footer-column h3 {
     margin-bottom: 1rem;
@@ -552,7 +551,7 @@ h3, h4 {
 
 .contatti-section {
     background-color: var(--color-sfondo-caldo);
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
 }
 
 .contatti-header {
