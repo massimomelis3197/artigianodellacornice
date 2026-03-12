@@ -955,6 +955,7 @@ h3, h4 {
     }
 
     .footer-logo {
+        height: 80px;
         margin: 0 auto 1rem;
        justify-content: left;
     }
@@ -967,7 +968,7 @@ h3, h4 {
 @media (max-width: 480px) {
    
 .logo img {
-    height: 70px; /* Altezza base */
+    height: 80px; /* Altezza base */
     width: auto;
     margin-left: 30px;
 }
