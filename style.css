@@ -961,6 +961,7 @@ h3, h4 {
     .footer-logo {
         height: 100px;
         margin: 0 auto 1rem;
+        margin-bottom:5px;
        justify-content: left;
     }
     
@@ -974,7 +975,7 @@ h3, h4 {
 .logo img {
     height: 100px; /* Altezza base */
     width: auto;
-    margin-left: 30px;
+    margin-left: 20px;
 }
     
 .hero {
