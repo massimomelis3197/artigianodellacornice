@@ -917,7 +917,11 @@ h3, h4 {
     .footer{
          padding: 3rem 2rem 1rem;
     }
-
+.footer-logo {
+        height: 100px;
+        margin: 0 auto 1rem;
+       justify-content: left;
+}
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -955,7 +959,7 @@ h3, h4 {
     }
 
     .footer-logo {
-        height: 80px;
+        height: 100px;
         margin: 0 auto 1rem;
        justify-content: left;
     }
@@ -968,7 +972,7 @@ h3, h4 {
 @media (max-width: 480px) {
    
 .logo img {
-    height: 80px; /* Altezza base */
+    height: 100px; /* Altezza base */
     width: auto;
     margin-left: 30px;
 }
