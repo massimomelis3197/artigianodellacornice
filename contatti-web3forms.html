@@ -44,17 +44,13 @@
                   action="https://api.web3forms.com/submit"
                   method="POST">
 
-                <!-- Access Key obbligatoria -->
                 <input type="hidden" name="access_key" value="LA-TUA-ACCESS-KEY">
-
-                <!-- Oggetto email -->
+                
                 <input type="hidden" name="subject" value="Nuovo messaggio dal sito - Artigiano">
 
-                <!-- Reindirizzamento dopo invio -->
                 <input type="hidden" name="redirect" value="Greetings.html">
 
-                <!-- Bottone honeypot anti-spam (consigliato) -->
-                <input type="checkbox" name="botcheck" style="display:none">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                 <div class="form-group">
                     <label for="nome">Nome e Cognome</label>
@@ -68,6 +64,12 @@
                     <label for="messaggio">Messaggio</label>
                     <textarea id="messaggio" name="messaggio" rows="6" required></textarea>
                 </div>
+                <div class="form-group">
+    <label style="font-size: 0.8rem;">
+        <input type="checkbox" required> Accetto il trattamento dei dati secondo la <a href="privacy.html">Privacy Policy</a>.
+    </label>
+</div>
+<button type="submit" class="submit-button">Invia Richiesta</button>
                 <button type="submit" class="submit-button">Invia Richiesta</button>
             </form>
         </div>
