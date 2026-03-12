@@ -8,45 +8,6 @@
      <script src="script.js"></script>
 </head>
 
-<!-- Cookie Banner -->
-<div id="cookie-banner" style="display:none; position:fixed; bottom:0; width:100%; background:#2C2C2C; color:#fff; padding:1.5rem; text-align:center; z-index:9999;">
-    <p style="margin-bottom:1rem;">
-        Questo sito utilizza cookie per analizzare il traffico. 
-        <a href="privacy.html" style="color:#D4AF37;">Leggi l'informativa privacy</a>
-    </p>
-    <button onclick="acceptCookies()" style="background:#D4AF37; color:#fff; border:none; padding:0.8rem 2rem; cursor:pointer; border-radius:5px;">
-        Accetta
-    </button>
-    <button onclick="rejectCookies()" style="background:#666; color:#fff; border:none; padding:0.8rem 2rem; cursor:pointer; border-radius:5px; margin-left:1rem;">
-        Rifiuta
-    </button>
-</div>
-
-<script>
-// Mostra banner se non ha ancora scelto
-if (!localStorage.getItem('cookieConsent')) {
-    document.getElementById('cookie-banner').style.display = 'block';
-}
-
-function acceptCookies() {
-    localStorage.setItem('cookieConsent', 'accepted');
-    document.getElementById('cookie-banner').style.display = 'none';
-    // Attiva Analytics
-    gtag('consent', 'update', {
-        'analytics_storage': 'granted'
-    });
-}
-
-function rejectCookies() {
-    localStorage.setItem('cookieConsent', 'rejected');
-    document.getElementById('cookie-banner').style.display = 'none';
-    // Blocca Analytics
-    gtag('consent', 'update', {
-        'analytics_storage': 'denied'
-    });
-}
-</script>
-
 <body>
  <div id="navbar-placeholder"></div>
 
