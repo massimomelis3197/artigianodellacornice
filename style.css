@@ -84,7 +84,7 @@ h3, h4 {
 }
 
 .logo img {
-    height: 80px; /* Altezza base */
+    height: 100px; /* Altezza base */
     width: auto;
     margin-left: 0px;
 }
@@ -968,9 +968,9 @@ h3, h4 {
 @media (max-width: 480px) {
    
 .logo img {
-    height: 40px; /* Altezza base */
+    height: 70px; /* Altezza base */
     width: auto;
-    margin-left: 0px;
+    margin-left: 30px;
 }
     
 .hero {
