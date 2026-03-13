@@ -811,7 +811,7 @@ h3, h4 {
 
 /* Griglia Galleria */
 .galleria-grid {
-    max-width: 1100px;
+    max-width: 1150px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
