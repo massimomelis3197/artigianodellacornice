@@ -86,7 +86,7 @@ h3, h4 {
 .logo img {
     height: 100px; /* Altezza base */
     width: auto;
-    margin-left: 0px;
+    margin-left: 10px;
 }
 
 .nav-menu {
