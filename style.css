@@ -884,6 +884,27 @@ h3, h4 {
     transform: translateY(0);
 }
 
+#cta-button {
+    background-color: var(--color-oro);
+    color: var(--color-bianco);
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    align-self: center;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+#cta-button:hover {
+    background-color: #C19B2E;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
 /* Responsive Galleria */
 @media (max-width: 992px) {
     .galleria-grid {
