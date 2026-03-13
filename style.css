@@ -298,6 +298,7 @@ h3, h4 {
     color: var(--color-grigio-scuro);
     font-size: 1.1rem;
     line-height: 1.8;
+    margin-bottom: 0rem;
 }
 
 /* Cards Container */
@@ -385,6 +386,7 @@ h3, h4 {
     color: var(--color-grigio-scuro);
     font-size: 1.1rem;
     line-height: 1.8;
+    margin-bottom: 0rem;
 }
 
 .portfolio-footer{
@@ -489,7 +491,7 @@ h3, h4 {
 .footer-logo {
     height: 120px;
     width: auto;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .footer-column h3 {
@@ -773,6 +775,7 @@ h3, h4 {
 .galleria-header p {
     color: var(--color-grigio-scuro);
     font-size: 1.1rem;
+    margin-bottom: 0px;
 }
 
 /* Filtri */
@@ -919,7 +922,9 @@ h3, h4 {
         gap: 4rem;
         grid-template-columns: repeat(2, 1fr);
     }
-
+.galleria-header p{
+    margin-bottom:0rem;
+    
     .footer{
          padding: 2rem 1rem;
     }
@@ -927,6 +932,7 @@ h3, h4 {
         height: 100px;
         margin: 0 auto 1rem;
        justify-content: left;
+    margin-top: 10px;
 }
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
