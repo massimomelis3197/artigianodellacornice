@@ -921,12 +921,11 @@ h3, h4 {
     }
 
     .footer{
-         padding: 3rem 2rem 1rem;
+         padding: 2rem 1rem;
     }
 .footer-logo {
         height: 100px;
         margin: 0 auto 1rem;
-        margin-top: 20px;
        justify-content: left;
 }
     .footer-container {
